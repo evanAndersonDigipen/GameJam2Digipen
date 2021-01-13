@@ -26,6 +26,8 @@ public class PlayerController2DComplex : MonoBehaviour
     public float JumpTime = 0.2f;
     [Tooltip("The amount of extra jumps that can be made in the air.")]
     public int ExtraJumps = 1;
+    [Tooltip("Are extra jumps given back when wallsiding?")]
+    public bool ReplenishJumpsOnWalls = false;
 
     [Tooltip("The speed the character will slide down walls.")]
     public float WallSlideSpeed = 1;
@@ -163,8 +165,14 @@ public class PlayerController2DComplex : MonoBehaviour
 
 
 
-        //Give extra jumps back
+        //Give extra jumps back on ground
         if (IsGrounded == true)
+        {
+            ExtraJumpsCounter = ExtraJumps;
+        }
+
+        //Give extra jumps back if on wall and supposed to
+        if (ReplenishJumpsOnWalls == true && WallSliding == true)
         {
             ExtraJumpsCounter = ExtraJumps;
         }
