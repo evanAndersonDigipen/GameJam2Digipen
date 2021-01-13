@@ -58,6 +58,8 @@ public class PlayerController2DComplex : MonoBehaviour
     public bool IsTouchingFront = false;
     bool WallSliding = false;
 
+    [Tooltip("For Script Use")]
+    public bool WallBehind;
     bool WallJumping = false;
     int WallJumpDirrection = 0;
 
@@ -151,6 +153,14 @@ public class PlayerController2DComplex : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && WallSliding == true)
         {
             WallJumping = true;
+            WallJumpDirrection = -Dirrection;
+            Invoke("SetWallJumpToFalse", WallJumpTime);
+            MyAudio.PlayOneShot(JumpSound);
+        }
+        //wall jump if player is next to a wall and moving
+        else if (Input.GetKeyDown(KeyCode.Space) && WallBehind == true && Dirrection != 0)
+        {
+            WallJumping = true;
             WallJumpDirrection = Dirrection;
             Invoke("SetWallJumpToFalse", WallJumpTime);
             MyAudio.PlayOneShot(JumpSound);
@@ -159,7 +169,7 @@ public class PlayerController2DComplex : MonoBehaviour
         //If wall jumping true, change velocity
         if (WallJumping == true)
         {
-            PlayerRB.velocity = new Vector2(WallJumpForce.x * -WallJumpDirrection, WallJumpForce.y);
+            PlayerRB.velocity = new Vector2(WallJumpForce.x * WallJumpDirrection, WallJumpForce.y);
         }
 
 
