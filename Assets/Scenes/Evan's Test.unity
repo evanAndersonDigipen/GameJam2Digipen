@@ -363,7 +363,9 @@ MonoBehaviour:
   LevelLayers:
   - {fileID: 2142215444}
   - {fileID: 1791340372}
-  linkedLayer: 0
+  layerID: 0
+  fadeoutDone: 0
+  fadeinDone: 0
 --- !u!1 &503807123
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +988,9 @@ MonoBehaviour:
   LevelLayers:
   - {fileID: 2142215444}
   - {fileID: 1791340372}
-  linkedLayer: 1
+  layerID: 1
+  fadeoutDone: 0
+  fadeinDone: 0
 --- !u!1 &1047527087
 GameObject:
   m_ObjectHideFlags: 0
