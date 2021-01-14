@@ -115,7 +115,7 @@ public class PlayerController2DComplex : MonoBehaviour
         if (Dirrection == 0 && IsGrounded)
         {
             PlayerRB.velocity = Vector3.Lerp(PlayerRB.velocity, new Vector3(0, PlayerRB.velocity.y, 0), 0.05f);
-            Debug.Log("SLOW");
+            //Debug.Log("SLOW");
         }
         
 
