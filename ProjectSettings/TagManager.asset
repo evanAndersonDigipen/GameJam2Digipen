@@ -9,6 +9,7 @@ TagManager:
   - SolidWorld
   - Moving
   - LayerSwitch
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - 
   - 
   - World
-  - 
-  - 
+  - Bullet
+  - Player
   - 
   - 
   - 

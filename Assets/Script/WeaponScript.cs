@@ -13,11 +13,7 @@ public class WeaponScript : MonoBehaviour
     public float bulletSpeed = 10f;     //Speed of bullet
     public float shootDelay = .1f;
     private float shootTimer;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public GameObject spawnPosition;
 
     // Update is called once per frame
     void Update()
@@ -41,7 +37,7 @@ public class WeaponScript : MonoBehaviour
         shootDirection.Normalize();
 
         //Instantiate new bullet
-        GameObject newBullet = Instantiate(BulletPrefab, transform.position, transform.rotation);
+        GameObject newBullet = Instantiate(BulletPrefab, spawnPosition.transform.position, transform.rotation);
         //Set velocity to the vector * speed
         newBullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletSpeed;
         //Set rotation of bullet to look at the mouse

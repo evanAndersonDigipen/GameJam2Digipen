@@ -116,7 +116,7 @@ public class PlayerController2DComplex : MonoBehaviour
         if (Dirrection == 0 && IsGrounded)
         {
             PlayerRB.velocity = Vector3.Lerp(PlayerRB.velocity, new Vector3(0, PlayerRB.velocity.y, 0), 0.05f);
-            //Debug.Log("SLOW");
+            //Debug.Log("Slowing Down");
         }
         
 
@@ -151,7 +151,7 @@ public class PlayerController2DComplex : MonoBehaviour
 
 
         //Wall jump if player presses jump and is wall sliding
-        if (Input.GetKeyDown(KeyCode.Space) && WallSliding == true)
+        if (Input.GetKeyDown(KeyCode.Space) && WallSliding)
         {
             //set dirrection to negative if facing the wall still
             if (Dirrection == DirrectionLastTime)
@@ -167,14 +167,16 @@ public class PlayerController2DComplex : MonoBehaviour
             WallJumping = true;
             Invoke("SetWallJumpToFalse", WallJumpTime);
             MyAudio.PlayOneShot(JumpSound);
+            //Debug.Log("WallJump1");
         }
         //wall jump if player is next to a wall and moving
-        else if (Input.GetKeyDown(KeyCode.Space) && WallBehind == true && Dirrection != 0)
+        else if (Input.GetKeyDown(KeyCode.Space) && WallBehind && Dirrection != 0)
         {
             WallJumpDirrection = Dirrection;
             WallJumping = true;
             Invoke("SetWallJumpToFalse", WallJumpTime);
             MyAudio.PlayOneShot(JumpSound);
+            //Debug.Log("WallJump2");
         }
 
         //set DirrectionLastTime to be used for walljump
