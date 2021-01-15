@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a37b2fec95c1d3488e3c518a7e3b94d
+guid: 26083770bcb854c4cb1f9627bf81fdb3
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -41,6 +41,15 @@ TextureImporter:
   - first:
       213: 1290921552067238366
     second: Spaceship Tile set_12
+  - first:
+      213: 2017779806496639359
+    second: Spaceship Tile set_13
+  - first:
+      213: 6403377428153926270
+    second: Spaceship Tile set_14
+  - first:
+      213: 1069965453500828084
+    second: Spaceship Tile set_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -406,6 +415,69 @@ TextureImporter:
       bones: []
       spriteID: ed91ddfdf464ae110800000000000000
       internalID: 1290921552067238366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship Tile set_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7940391b08900c10800000000000000
+      internalID: 2017779806496639359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship Tile set_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e728ed728dd5dd850800000000000000
+      internalID: 6403377428153926270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship Tile set_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b94bd939e749de00800000000000000
+      internalID: 1069965453500828084
       vertices: []
       indices: 
       edges: []
