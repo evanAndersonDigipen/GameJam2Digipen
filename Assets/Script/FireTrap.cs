@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class FireParticleEffect : MonoBehaviour
+public class FireTrap : MonoBehaviour
 {
     [Tooltip("The particle system for the fire.")]
     public ParticleSystem Fire;

@@ -46,6 +46,7 @@ public class PlayerController2DComplex : MonoBehaviour
     AudioSource MyAudio;
 
     int Dirrection = 0;
+    int DirrectionLastTime = 0;
     bool FacingRight = true;
 
     [Tooltip("For Script Use")]
@@ -152,19 +153,32 @@ public class PlayerController2DComplex : MonoBehaviour
         //Wall jump if player presses jump and is wall sliding
         if (Input.GetKeyDown(KeyCode.Space) && WallSliding == true)
         {
+            //set dirrection to negative if facing the wall still
+            if (Dirrection == DirrectionLastTime)
+            {
+                WallJumpDirrection = -Dirrection;
+            }
+            //set dirrection to possitive if faced away from the wall
+            else
+            {
+                WallJumpDirrection = Dirrection;
+            }
+
             WallJumping = true;
-            WallJumpDirrection = -Dirrection;
             Invoke("SetWallJumpToFalse", WallJumpTime);
             MyAudio.PlayOneShot(JumpSound);
         }
         //wall jump if player is next to a wall and moving
         else if (Input.GetKeyDown(KeyCode.Space) && WallBehind == true && Dirrection != 0)
         {
-            WallJumping = true;
             WallJumpDirrection = Dirrection;
+            WallJumping = true;
             Invoke("SetWallJumpToFalse", WallJumpTime);
             MyAudio.PlayOneShot(JumpSound);
         }
+
+        //set DirrectionLastTime to be used for walljump
+        DirrectionLastTime = Dirrection;
 
         //If wall jumping true, change velocity
         if (WallJumping == true)
