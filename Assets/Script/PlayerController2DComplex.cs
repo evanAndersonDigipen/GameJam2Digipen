@@ -46,7 +46,6 @@ public class PlayerController2DComplex : MonoBehaviour
     AudioSource MyAudio;
 
     int Dirrection = 0;
-    int DirrectionLastTime = 0;
     bool FacingRight = true;
 
     [Tooltip("For Script Use")]
@@ -63,6 +62,7 @@ public class PlayerController2DComplex : MonoBehaviour
     public bool WallBehind;
     bool WallJumping = false;
     int WallJumpDirrection = 0;
+    int DirrectionLastTime = 0;
 
 
     // Start is called before the first frame update
