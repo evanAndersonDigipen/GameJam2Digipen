@@ -15,8 +15,8 @@ public class FireTrap : MonoBehaviour
 {
     [Tooltip("The particle system for the fire.")]
     public ParticleSystem Fire;
-    [Tooltip("The particle system for the pre-fire.")]
-    public ParticleSystem PreFire;
+    [Tooltip("The game object for the pre-fire.")]
+    public GameObject PreFireObject;
     [Tooltip("Time spent till start in seconds.")]
     public float TimeTillStart = 1;
     [Tooltip("Time spent OFF in seconds")]
@@ -26,6 +26,7 @@ public class FireTrap : MonoBehaviour
     float TimeOn;
 
     PolygonCollider2D HitBox;
+    ParticleSystem PreFire;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class FireTrap : MonoBehaviour
     {   
         //initialize the collider and particle system timers
         HitBox = GetComponent<PolygonCollider2D>();
+        PreFire = PreFireObject.GetComponent<ParticleSystem>();
         HitBox.enabled = false;
         PreFireTime = PreFire.main.duration;
         TimeOn = Fire.main.duration;
@@ -57,6 +59,10 @@ public class FireTrap : MonoBehaviour
         //enable fire
         HitBox.enabled = true;
         Fire.Play();
+
+        //disable pre-fire and turn back on
+        PreFireObject.SetActive(false);
+        PreFireObject.SetActive(true);
 
         //start next function in some time
         Invoke("FireOff", TimeOn);
