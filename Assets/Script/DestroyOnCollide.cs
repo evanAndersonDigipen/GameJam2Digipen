@@ -5,10 +5,16 @@ using UnityEngine;
 public class DestroyOnCollide : MonoBehaviour
 {
     public AudioSource hitAudio;
+    public GameObject hitParticles;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(hitAudio != null)
+        if (gameObject.tag == "PlayerBullet")
+        {
+            GameObject particles = Instantiate(hitParticles, transform.position, transform.rotation);
+            Destroy(particles, 2);
+        }
+        if (hitAudio != null)
         {
             //Disable the sprite renderer
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
