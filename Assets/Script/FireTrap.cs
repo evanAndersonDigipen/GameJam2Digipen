@@ -57,7 +57,7 @@ public class FireTrap : MonoBehaviour
     void FireOn()
     {
         //enable fire
-        HitBox.enabled = true;
+        Invoke("FireHitBoxOn", 0.3f);
         Fire.Play();
 
         //disable pre-fire and turn back on
@@ -66,6 +66,12 @@ public class FireTrap : MonoBehaviour
 
         //start next function in some time
         Invoke("FireOff", TimeOn);
+    }
+
+    //Turn on fire hit box
+    void FireHitBoxOn()
+    {
+        HitBox.enabled = true;
     }
 
     //Turn fire off
@@ -77,6 +83,4 @@ public class FireTrap : MonoBehaviour
         //start next function in some time
         Invoke("PreFireOn", TimeOff);
     }
-
-
 }
