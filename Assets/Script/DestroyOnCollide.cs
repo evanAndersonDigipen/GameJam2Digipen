@@ -14,10 +14,17 @@ public class DestroyOnCollide : MonoBehaviour
             GameObject particles = Instantiate(hitParticles, transform.position, transform.rotation);
             Destroy(particles, 2);
         }
+
+        if(collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<Health>().HealthRemover(2);
+        }
+
         if (hitAudio != null)
         {
             //Disable the sprite renderer
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
             hitAudio.Play();
             Destroy(gameObject, hitAudio.clip.length);
         } 

@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-
+/*
+ * Name: Evan Anderson
+ * Date: 1/19/2020
+ * Desc: Switches level area/layer
+ */
 public class LayerSwitch : MonoBehaviour
 {
     [Tooltip("Array of all the layers")]

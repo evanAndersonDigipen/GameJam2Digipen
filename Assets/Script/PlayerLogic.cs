@@ -11,9 +11,9 @@ using UnityEngine;
 public class PlayerLogic : MonoBehaviour
 {
     [Tooltip("Color of active checkpoint.")]
-    public Color ActiveCheckpoint = new Color(0, 1, 0, 1);
+    public Sprite ActiveCheckpoint;
     [Tooltip("Color of inactive checkpoint.")]
-    public Color InactiveCheckpoint = new Color(1, 1, 1, 1);
+    public Sprite InactiveCheckpoint;
 
     private Vector3 RespawnPos;
     private GameObject LastCheckpoint;
@@ -58,9 +58,9 @@ public class PlayerLogic : MonoBehaviour
             //set colors of checkpoints
             if (LastCheckpoint != null)
             {
-                LastCheckpoint.GetComponent<SpriteRenderer>().color = InactiveCheckpoint;
+                LastCheckpoint.GetComponent<SpriteRenderer>().sprite = InactiveCheckpoint;
             }
-            collision.GetComponent<SpriteRenderer>().color = ActiveCheckpoint;
+            collision.GetComponent<SpriteRenderer>().sprite = ActiveCheckpoint;
 
             //save current checkpoint to use later
             LastCheckpoint = collision.gameObject;
