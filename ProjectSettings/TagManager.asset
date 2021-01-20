@@ -10,6 +10,7 @@ TagManager:
   - Moving
   - LayerSwitch
   - PlayerBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
