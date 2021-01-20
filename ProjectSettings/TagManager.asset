@@ -10,6 +10,7 @@ TagManager:
   - Moving
   - LayerSwitch
   - PlayerBullet
+  - Laser
   layers:
   - Default
   - TransparentFX
