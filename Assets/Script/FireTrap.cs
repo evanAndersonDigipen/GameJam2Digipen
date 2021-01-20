@@ -13,8 +13,8 @@ using UnityEngine;
 
 public class FireTrap : MonoBehaviour
 {
-    [Tooltip("The particle system for the fire.")]
-    public ParticleSystem Fire;
+    [Tooltip("The game object for the fire.")]
+    public GameObject FireObject;
     [Tooltip("The game object for the pre-fire.")]
     public GameObject PreFireObject;
     [Tooltip("Time spent till start in seconds.")]
@@ -26,7 +26,10 @@ public class FireTrap : MonoBehaviour
     float TimeOn;
 
     PolygonCollider2D HitBox;
+    ParticleSystem Fire;
     ParticleSystem PreFire;
+    AudioSource FireSound;
+    AudioSource PreFireSound;
 
 
     // Start is called before the first frame update
@@ -34,7 +37,10 @@ public class FireTrap : MonoBehaviour
     {   
         //initialize the collider and particle system timers
         HitBox = GetComponent<PolygonCollider2D>();
+        Fire = FireObject.GetComponent<ParticleSystem>();
         PreFire = PreFireObject.GetComponent<ParticleSystem>();
+        FireSound = FireObject.GetComponent<AudioSource>();
+        PreFireSound = PreFireObject.GetComponent<AudioSource>();
         HitBox.enabled = false;
         PreFireTime = PreFire.main.duration;
         TimeOn = Fire.main.duration;
@@ -48,6 +54,7 @@ public class FireTrap : MonoBehaviour
     {
         //play pre-fire
         PreFire.Play();
+        PreFireSound.Play();
 
         //start next function in some time
         Invoke("FireOn", PreFireTime);
@@ -59,8 +66,10 @@ public class FireTrap : MonoBehaviour
         //enable fire
         Invoke("FireHitBoxOn", 0.3f);
         Fire.Play();
+        FireSound.Play();
 
         //disable pre-fire and turn back on
+        PreFireSound.Stop();
         PreFireObject.SetActive(false);
         PreFireObject.SetActive(true);
 
@@ -79,6 +88,7 @@ public class FireTrap : MonoBehaviour
     {
         //disable fire
         HitBox.enabled = false;
+        FireSound.Stop();
 
         //start next function in some time
         Invoke("PreFireOn", TimeOff);

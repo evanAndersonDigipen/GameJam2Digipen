@@ -5,18 +5,17 @@ using UnityEngine;
 public class AsteriodDeath : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Vector3 respawnPos;
 
     void Start()
     {
-        respawnPos = transform.position;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Death"))
+        if (collision.gameObject.CompareTag("Laser"))
         {
-            transform.position = respawnPos;
+            Destroy(gameObject);
         }
     }
 
