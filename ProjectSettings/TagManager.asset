@@ -10,7 +10,7 @@ TagManager:
   - Moving
   - LayerSwitch
   - PlayerBullet
-  - Enemy
+  - Laser
   layers:
   - Default
   - TransparentFX

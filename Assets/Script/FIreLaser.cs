@@ -32,7 +32,8 @@ public class FIreLaser : MonoBehaviour
         //Update Timer
         Timer += Time.deltaTime;
         //Check for button press
-        if (Input.GetAxisRaw("Jump") > 0)
+        //if (Input.GetAxisRaw("Jump") > 0)
+        if (Input.GetKeyDown("up"))
         {
             if (Timer >= Cooldown)
             {
