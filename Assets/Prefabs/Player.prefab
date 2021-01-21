@@ -338,7 +338,7 @@ MonoBehaviour:
   JumpForce: 4
   JumpTime: 0.3
   ExtraJumps: 1
-  ReplenishJumpsOnWalls: 0
+  ReplenishJumpsOnWalls: 1
   WallSlideSpeed: 1
   WallJumpForce: {x: 1.5, y: 5}
   WallJumpTime: 0.2
