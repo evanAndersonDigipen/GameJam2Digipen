@@ -179,6 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+  deathParticles: {fileID: 3953797240868825856, guid: ace9381acaaac8247ade7268c6b46b3b,
+    type: 3}
 --- !u!82 &7278737364060667899
 AudioSource:
   m_ObjectHideFlags: 0
