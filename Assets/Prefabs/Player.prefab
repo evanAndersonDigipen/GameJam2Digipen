@@ -333,14 +333,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5391262ef7431c84c881bc8b011ebc84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 15
-  Acceleration: 2
+  MovementSpeed: 7
+  Acceleration: 10
   JumpForce: 4
   JumpTime: 0.3
   ExtraJumps: 1
   ReplenishJumpsOnWalls: 0
   WallSlideSpeed: 1
-  WallJumpForce: {x: 3, y: 5}
+  WallJumpForce: {x: 1.5, y: 5}
   WallJumpTime: 0.2
   JumpSound: {fileID: 0}
   IsGrounded: 0
@@ -358,8 +358,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3201172e17c724c4884b77904127b44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActiveCheckpoint: {fileID: 0}
-  InactiveCheckpoint: {fileID: 0}
+  ActiveCheckpoint: {fileID: 8744144978555315620, guid: 91a8522080894f74593213e63ff63cfd,
+    type: 3}
+  InactiveCheckpoint: {fileID: 1919101639333454221, guid: 91a8522080894f74593213e63ff63cfd,
+    type: 3}
 --- !u!95 &3770760081829118964
 Animator:
   serializedVersion: 3

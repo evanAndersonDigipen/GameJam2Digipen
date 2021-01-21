@@ -25036,7 +25036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056230524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -8.04, y: -1.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -25437,10 +25437,35 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8885904840351604033, guid: 85e82fa68519ea2488a4b7bc4e75506a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8885904840351604034, guid: 85e82fa68519ea2488a4b7bc4e75506a,
         type: 3}
       propertyPath: JumpSound
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885904840351604034, guid: 85e82fa68519ea2488a4b7bc4e75506a,
+        type: 3}
+      propertyPath: MovementSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885904840351604034, guid: 85e82fa68519ea2488a4b7bc4e75506a,
+        type: 3}
+      propertyPath: Acceleration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885904840351604034, guid: 85e82fa68519ea2488a4b7bc4e75506a,
+        type: 3}
+      propertyPath: WallJumpForce.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885904840351604034, guid: 85e82fa68519ea2488a4b7bc4e75506a,
+        type: 3}
+      propertyPath: ReplenishJumpsOnWalls
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8885904840351604037, guid: 85e82fa68519ea2488a4b7bc4e75506a,
         type: 3}
