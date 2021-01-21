@@ -25,6 +25,11 @@ public class Health : MonoBehaviour
     private void deathEvent()
     {
         //Do death stuff here
-        Destroy(gameObject);
+        if(gameObject.GetComponent<AudioSource>() != null)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        Destroy(gameObject, 3);
     }
 }
