@@ -15,8 +15,9 @@ public class DestroyOnCollide : MonoBehaviour
             Destroy(particles, 2);
         }
 
-        if(collision.gameObject.tag == "Death")
+        if (collision.gameObject.tag == "Death")
         {
+            if (collision.gameObject.GetComponent<Health>() != null)
             collision.gameObject.GetComponent<Health>().HealthRemover(2);
         }
 
