@@ -13,14 +13,22 @@ public class CollectibleScore : MonoBehaviour
     [Tooltip("The amount of points you get from collecting object")]
     public int Points = 1;
 
+    public AudioSource coinPickup;
+
 
     //destroy and add points if collide with player
     private void OnTriggerEnter2D (Collider2D collision)
     {        
         if (collision.CompareTag("Player"))
         {
+            if(coinPickup != null)
+            {
+                coinPickup.Play();
+            }
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
             GameManager.Score += Points;
-            Destroy(gameObject);
+            Destroy(gameObject, 2);
         }
     }
 }
