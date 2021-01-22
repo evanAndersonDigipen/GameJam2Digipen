@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 3301952749711421385}
   - component: {fileID: 3301952749711421391}
   - component: {fileID: 3301952749711421384}
-  - component: {fileID: 3218212875909550392}
+  - component: {fileID: 1386244777450297188}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -203,7 +203,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4885,7 +4885,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!82 &3218212875909550392
+--- !u!82 &1386244777450297188
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4906,10 +4906,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 5
-  MaxDistance: 10
+  MinDistance: 10
+  MaxDistance: 100
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4919,21 +4919,48 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.1004398
+      outSlope: -1.1004398
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.11037578
+      value: 0.94444776
+      inSlope: -1.6416476
+      outSlope: -1.6416476
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.1391663
+      value: 0.63316095
+      inSlope: -7.6847806
+      outSlope: -7.6847806
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.16699538
+      value: 0.18775886
+      inSlope: -14.791166
+      outSlope: -14.791166
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.21618652
+      value: 0
+      inSlope: -0.90945363
+      outSlope: -0.90945363
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4947,8 +4974,8 @@ AudioSource:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -4993,7 +5020,7 @@ GameObject:
   - component: {fileID: 3301952751488918325}
   - component: {fileID: 3301952751488918283}
   - component: {fileID: 3301952751488918324}
-  - component: {fileID: 5342501925443051075}
+  - component: {fileID: 1035009436539139534}
   m_Layer: 0
   m_Name: Pre-Fire
   m_TagString: Untagged
@@ -9737,7 +9764,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!82 &5342501925443051075
+--- !u!82 &1035009436539139534
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9758,10 +9785,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 5
-  MaxDistance: 10
+  MinDistance: 10
+  MaxDistance: 100
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -9771,21 +9798,48 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.1004398
+      outSlope: -1.1004398
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.11037578
+      value: 0.94444776
+      inSlope: -1.6416476
+      outSlope: -1.6416476
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.1391663
+      value: 0.63316095
+      inSlope: -7.6847806
+      outSlope: -7.6847806
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.16699538
+      value: 0.18775886
+      inSlope: -14.791166
+      outSlope: -14.791166
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.21618652
+      value: 0
+      inSlope: -0.90945363
+      outSlope: -0.90945363
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -9799,8 +9853,8 @@ AudioSource:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -9809,7 +9863,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

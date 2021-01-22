@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     public float maxHealth = 10;
     private float currentHealth;
+    public GameObject deathParticles;
 
     private void Start()
     {
@@ -25,6 +26,16 @@ public class Health : MonoBehaviour
     private void deathEvent()
     {
         //Do death stuff here
-        Destroy(gameObject);
+        if(gameObject.GetComponent<AudioSource>() != null)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+        if(deathParticles != null)
+        {
+            Instantiate(deathParticles, transform.position, transform.rotation);
+        }
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject, 3);
     }
 }

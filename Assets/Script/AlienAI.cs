@@ -48,12 +48,7 @@ public class AlienAI : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, rayDistance + 0.1f);
         if (hit)
-        {
             return true;
-        }
-        else
-        {
             return false;
-        }
     }
 }

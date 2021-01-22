@@ -64,7 +64,11 @@ public class PlayerController2DComplex : MonoBehaviour
     int WallJumpDirrection = 0;
     int DirrectionLastTime = 0;
 
-
+    public AudioSource moveSounds;
+    public AudioClip[] walkSoundClips;
+    public float walkSoundDelay = .3f;
+    private float walkSoundTime = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -257,9 +261,24 @@ public class PlayerController2DComplex : MonoBehaviour
         {
             PlayerAnim.SetBool("IsWalking", true);
         }
+
+        if(IsGrounded && Dirrection != 0)
+        {
+            walkSoundTime += Time.deltaTime;
+            if (walkSoundTime > walkSoundDelay)
+            {
+                WalkSound();
+                walkSoundTime = 0;
+            }
+        }
     }
 
-
+    void WalkSound()
+    {
+        int soundToPlay = Random.Range(0, walkSoundClips.Length);
+        moveSounds.clip = walkSoundClips[soundToPlay];
+        moveSounds.Play();
+    }
 
     //Function to flip character by reversing its scaler
     void Flip()

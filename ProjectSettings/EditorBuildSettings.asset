@@ -9,9 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2799af727077e734ab2dadbe2cb6d6d5
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: c21d8576cf4113842afe6399824faedc
+    path: Assets/Scenes/GavinScene.unity
+    guid: 1f67a3653354eca4c91265c5952dfb09
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 63ff4c8215ec41d4e934597aa4e3f84a
+    path: Assets/Scenes/Nathan Scene.unity
+    guid: e0273870b81fa4c40841a92e944ae804
+  - enabled: 1
+    path: Assets/Scenes/DhruvScene.unity
+    guid: 929cf22224e6b754680bcb607abc2dfa
+  - enabled: 1
+    path: Assets/Scenes/EricScene.unity
+    guid: 5d11c6dfdfa29b84a8f05cc622678f33
+  - enabled: 1
+    path: Assets/Scenes/RILEYSCENE.unity
+    guid: 686fc5e8ba5a8d147afedfbf558f12b9
+  - enabled: 1
+    path: Assets/Scenes/EndScrene SpaceShip.unity
+    guid: 25694d80239ea954b9c49a4b8a954c4e
   m_configObjects: {}
