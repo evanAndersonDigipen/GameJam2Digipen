@@ -30013,7 +30013,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1723267920}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -36342,9 +36342,6 @@ Transform:
   - {fileID: 802929014}
   - {fileID: 295971160}
   - {fileID: 1270901768}
-  - {fileID: 503189544}
-  - {fileID: 1884962006}
-  - {fileID: 1399130586}
   - {fileID: 1895685946}
   - {fileID: 2043262243}
   - {fileID: 724893176}
@@ -36352,7 +36349,6 @@ Transform:
   - {fileID: 1534626987}
   - {fileID: 1460716301}
   - {fileID: 6505986}
-  - {fileID: 46323888}
   - {fileID: 1485884916}
   - {fileID: 484772370}
   - {fileID: 1771676521}
@@ -36383,39 +36379,43 @@ Transform:
   - {fileID: 1786487942}
   - {fileID: 60213097}
   - {fileID: 1886130024}
+  - {fileID: 854289794}
   - {fileID: 1954316029}
+  - {fileID: 1163926353}
   - {fileID: 752720663}
   - {fileID: 1620399883}
   - {fileID: 2055225577}
   - {fileID: 585317006}
+  - {fileID: 1475072862}
   - {fileID: 1926314906}
   - {fileID: 961386035}
   - {fileID: 1978725113}
-  - {fileID: 1236233279}
-  - {fileID: 1356857578}
-  - {fileID: 1962269855}
-  - {fileID: 1475072862}
-  - {fileID: 797303258}
-  - {fileID: 394156654}
-  - {fileID: 1254200534}
   - {fileID: 1449897305}
-  - {fileID: 1052096539}
-  - {fileID: 712846242}
-  - {fileID: 1163926353}
-  - {fileID: 879971827}
+  - {fileID: 1236233279}
+  - {fileID: 1399130586}
+  - {fileID: 503189544}
+  - {fileID: 1962269855}
+  - {fileID: 797303258}
   - {fileID: 1184799827}
-  - {fileID: 854289794}
-  - {fileID: 183958141}
+  - {fileID: 394156654}
+  - {fileID: 1884962006}
+  - {fileID: 1254200534}
+  - {fileID: 712846242}
+  - {fileID: 879971827}
   - {fileID: 1566660598}
+  - {fileID: 46323888}
+  - {fileID: 183958141}
   - {fileID: 1599104133}
-  - {fileID: 121452038}
+  - {fileID: 1356857578}
   - {fileID: 1175292260}
-  - {fileID: 545309801}
+  - {fileID: 121452038}
   - {fileID: 1009739600}
+  - {fileID: 1052096539}
+  - {fileID: 545309801}
   - {fileID: 1755458372}
   - {fileID: 50701476}
-  - {fileID: 347619634}
   - {fileID: 375916439}
+  - {fileID: 347619634}
   m_Father: {fileID: 877868263}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
