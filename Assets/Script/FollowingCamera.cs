@@ -18,6 +18,11 @@ public class FollowingCamera : MonoBehaviour
     [Tooltip("The offset of the camera compared to the player.")]
     public Vector3 Offset = new Vector3(0, 0, 0);
 
+    //move camera to correct location on start
+    void Start()
+    {
+        transform.position = new Vector3 (Target.transform.position.x + Offset.x, Target.transform.position.y + Offset.y, transform.position.z);
+    }
 
     private void FixedUpdate()
     {

@@ -11,6 +11,8 @@ TagManager:
   - LayerSwitch
   - PlayerBullet
   - Laser
+  - Enemy
+  - flip
   layers:
   - Default
   - TransparentFX

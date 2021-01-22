@@ -106,7 +106,7 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09, y: -0.6}
+  m_Offset: {x: -0.055, y: -0.42}
   m_Size: {x: 0.65, y: 0.3}
   m_Direction: 1
 --- !u!114 &8885904839794102608
@@ -199,8 +199,8 @@ GameObject:
   - component: {fileID: 8885904840351604047}
   - component: {fileID: 3770760081829118964}
   - component: {fileID: 1822809320519061789}
-  - component: {fileID: 1596189326}
   - component: {fileID: -6029999118368074916}
+  - component: {fileID: 4197743258251649459}
   m_Layer: 10
   m_Name: PlayerGun
   m_TagString: Player
@@ -263,7 +263,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 9141798806709939589, guid: 317b8df50bfe9064fb6e0d9621e8ac1b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -487,24 +487,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1596189326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8885904840351604037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b24217f32d6cf479446f79d737882d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile: {fileID: 8169665006597492763, guid: dc6d630762309b64ba8a5b3d7b50dc2a,
-    type: 3}
-  ProjectileSpeed: 5
-  Cooldown: 0.5
-  ShakeTime: 0.1
-  ShakeMag: 20
 --- !u!82 &-6029999118368074916
 AudioSource:
   m_ObjectHideFlags: 0
@@ -601,3 +583,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4197743258251649459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885904840351604037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6459d206ae84be645a005992503aa5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletPrefab: {fileID: 9164093254276880317, guid: bfece6c81f5d8e042a80cb8846f09b35,
+    type: 3}
+  bulletSpeed: 10
+  shootDelay: 0.3
+  spawnPosition: {fileID: 8885904840351604037}
