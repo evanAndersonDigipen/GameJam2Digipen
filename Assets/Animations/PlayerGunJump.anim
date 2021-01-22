@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerJump
+  m_Name: PlayerGunJump
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5298165748040980783, guid: ee82d007b4ad29143a2a0f0c1d075c42,
+      value: {fileID: 4021607104307496307, guid: 8f81ee5f5ad79f4478c843cf3e663f4e,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,7 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5298165748040980783, guid: ee82d007b4ad29143a2a0f0c1d075c42, type: 3}
+    - {fileID: 4021607104307496307, guid: 8f81ee5f5ad79f4478c843cf3e663f4e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 317b8df50bfe9064fb6e0d9621e8ac1b
+guid: 8f81ee5f5ad79f4478c843cf3e663f4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9141798806709939589
-    second: idleshooting_0
+      213: 4021607104307496307
+    second: jumpingwithgun_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idleshooting_0
+      name: jumpingwithgun_0
       rect:
         serializedVersion: 2
         x: 4
-        y: 3
+        y: 7
         width: 26
-        height: 50
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,8 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58d290254913ede70800000000000000
-      internalID: 9141798806709939589
+      spriteID: 3758f6e9a5e9fc730800000000000000
+      internalID: 4021607104307496307
       vertices: []
       indices: 
       edges: []
