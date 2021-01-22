@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7278737364060667899}
   m_Layer: 2
   m_Name: Slime
-  m_TagString: Enemy
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e98142f02f2f914eab90781d652993e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpDelay: 1.5
+  jumpDelay: 1.45
   rb: {fileID: 7278737364060667903}
   rayDistance: 0.45
   jumpForceX: 70
