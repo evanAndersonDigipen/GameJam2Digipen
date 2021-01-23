@@ -21,12 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/EricScene.unity
     guid: 5d11c6dfdfa29b84a8f05cc622678f33
   - enabled: 1
-    path: Assets/Scenes/RILEYSCENE.unity
-    guid: 686fc5e8ba5a8d147afedfbf558f12b9
-  - enabled: 1
-    path: Assets/Scenes/EndScrene SpaceShip.unity
-    guid: 25694d80239ea954b9c49a4b8a954c4e
-  - enabled: 1
     path: Assets/Scenes/Evan's Test.unity
     guid: 6d1527e071eda4b4da4633c918522b41
+  - enabled: 1
+    path: Assets/Scenes/RILEYSCENE-Team edit.unity
+    guid: 0b897c492bf1e81459991652e0e69bda
+  - enabled: 1
+    path: Assets/Scenes/EndScene SpaceShip.unity
+    guid: 25694d80239ea954b9c49a4b8a954c4e
+  - enabled: 0
+    path: Assets/Scenes/RILEYSCENE.unity
+    guid: 686fc5e8ba5a8d147afedfbf558f12b9
   m_configObjects: {}

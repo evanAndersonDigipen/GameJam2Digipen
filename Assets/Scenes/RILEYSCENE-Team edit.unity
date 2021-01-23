@@ -2302,6 +2302,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6127185245245404626, guid: 401906d81ccbb834c9452e9822fa43bc,
+        type: 3}
+      propertyPath: SceneName
+      value: EndScene SpaceShip
+      objectReference: {fileID: 0}
     - target: {fileID: 6127185245245404637, guid: 401906d81ccbb834c9452e9822fa43bc,
         type: 3}
       propertyPath: m_Name
