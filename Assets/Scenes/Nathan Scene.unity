@@ -25191,7 +25191,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 5bebdbbbbeca04344969abc908b135f8,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 54b581cfbb735f64ca8cb59c4182071a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -28424,6 +28424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127185245245404626, guid: 401906d81ccbb834c9452e9822fa43bc,
+        type: 3}
+      propertyPath: SceneName
+      value: DhruvScene
       objectReference: {fileID: 0}
     - target: {fileID: 6127185245245404637, guid: 401906d81ccbb834c9452e9822fa43bc,
         type: 3}
