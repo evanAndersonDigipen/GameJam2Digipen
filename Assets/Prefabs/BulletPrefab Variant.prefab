@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8177479690121513226, guid: bfece6c81f5d8e042a80cb8846f09b35,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5bebdbbbbeca04344969abc908b135f8,
+        type: 2}
     - target: {fileID: 4989705491898303427, guid: bfece6c81f5d8e042a80cb8846f09b35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,6 +83,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9065813817615780425, guid: bfece6c81f5d8e042a80cb8846f09b35,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5bebdbbbbeca04344969abc908b135f8,
+        type: 2}
     - target: {fileID: 9164093254276880317, guid: bfece6c81f5d8e042a80cb8846f09b35,
         type: 3}
       propertyPath: m_Name
