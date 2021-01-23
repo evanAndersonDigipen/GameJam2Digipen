@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿//Name: Eric Lighthall
+//Date: 1/22/2021
+//Desc: Updates health on enemies and destroys enemies if health is 0.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
