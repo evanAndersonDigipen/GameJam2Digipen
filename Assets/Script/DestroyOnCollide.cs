@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿//Name: Eric Lighthall
+//Date 1/22/2021
+//Desc: Deals with player bullet hit collisions and damaging enemies.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
