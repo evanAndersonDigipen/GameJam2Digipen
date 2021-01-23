@@ -36369,7 +36369,7 @@ PrefabInstance:
     - target: {fileID: 8226068913408465311, guid: 3fa305b286333364cb69029e0ce3fd49,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fa305b286333364cb69029e0ce3fd49, type: 3}
@@ -40202,6 +40202,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1596189324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596189326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596189325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b24217f32d6cf479446f79d737882d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 8169665006597492763, guid: dc6d630762309b64ba8a5b3d7b50dc2a,
+    type: 3}
+  ProjectileSpeed: 10
+  Cooldown: 0.5
+  ShakeTime: 0.1
+  ShakeMag: 20
 --- !u!1001 &1599104132
 PrefabInstance:
   m_ObjectHideFlags: 0
